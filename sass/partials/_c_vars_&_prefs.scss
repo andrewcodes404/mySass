@@ -1,6 +1,55 @@
 ///////////////////////////////////
-///****   helper_classes.scss   ****///
+///****   some globals   ****///
 ///////////////////////////////////
+// $mauve : #2b2856;
+$hint-of-pink :#eaeaee;
+$pink-elephant-breathe :  #cbb3c4;
+$mauve: #97688a;
+$purple: #b7557b;
+$aqua : #88e3b3;
+$grape : #606380;
+$cyan: #00ffff;
+$yellow: #fed731;
+$green : #27d38c;
+$darkgrey :  #2d3a4e;
+$font-heading : #97688a;
+$font-body: $darkgrey;
+
+$teal :  #69bfcc;
+$fire-orange : #d55d4c;
+
+
+$prim : green;
+$secondary : blue;
+$hover : $aqua;
+
+
+
+*{-moz-box-sizing: border-box;box-sizing: border-box;}
+
+///images
+img{
+	width:100%;
+	vertical-align: bottom; //stops that annoying 2px gap at the btm of imgs
+	height: auto;
+}
+.img-cont{max-width: 400px;margin: 2rem auto;}
+
+
+.container {
+    
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1000px;
+  width: 95%;
+  @include media-med {width: 90%}
+}
+
+// TEST the SASS
+// body{background-color: pink;}
+
+
 ///quick border
 .border1{ border: 1px dashed blue;}
 .border2{ border: 1px dashed orange;}
@@ -36,49 +85,6 @@
     height: 100%;
 }
 
-////**** lists ****/////
-ul{margin-bottom: 1rem;}
-
-li{
-  @include fontSize(16px);
-  line-height: 1.4;
-  font-weight: 300;
-  list-style: none;
-  list-style-position: inside;
-}
-li::before{
-  content: " - "
-}
-
-////**** quotes ****/////
-em{ font-style: italic;}
-em::before{content: '"';}
-em::after{content: '"';}
-
-////**** blockquote ****////
-blockquote{
-    margin:1rem 1rem;
-    padding-left: 1rem;
-    font-style: italic;
-    color: darkslategray;
-    border-left: 1px solid;
-    line-height: 1.5;
-}
-
-
-////**** text transform ****////
-.text-lowercase {text-transform: lowercase;}
-.text-uppercase {text-transform: uppercase;}
-.text-capitalize {text-transform: capitalize;}
-strong{font-weight: 600;}
-.bold {font-weight: 500;}
-.light{font-weight: 300;}
-.underline {text-decoration: underline;}
-.italic{font-style: italic;}
-.highlight {color: yellow; background-color: pink}
-.text-left{text-align: left;}
-.text-right{text-align: right;}
-.text-center{text-align: center;}
 
 .pink{color:pink}
 .red{color:red}

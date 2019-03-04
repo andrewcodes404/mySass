@@ -9,7 +9,7 @@
 .border-me{ @include b1;}
 
 ///target all h tags
-/// @include h-tags { **whatever***}
+/// @include h-tags { **stlye***}
 @mixin h-tags {
     h1, h2, h3, h4, h5, h6 {
         @content;
@@ -41,6 +41,7 @@
 //////////////////////////////////////////////////////
 ///** BreakPoints **** BreakPoints **** BreakPoints **
 //////////////////////////////////////////////////////
+$media-x-sml: 450px;
 $media-sml: 576px;
 $media-med: 768px;
 $media-lrg: 992px;
@@ -48,6 +49,7 @@ $media-lrg-xl: 1200px;
 
 //mixins
 @mixin media-zero{@media (max-width: #{$media-sml}) {@content;}}
+@mixin media-x-sml{@media (min-width: #{$media-x-sml}) {@content;}}
 @mixin media-sml {@media (min-width: #{$media-sml}) {@content;}}
 @mixin media-med {@media (min-width: #{$media-med}) {@content;}}
 @mixin media-lrg {@media (min-width: #{$media-lrg}) {@content;}}
